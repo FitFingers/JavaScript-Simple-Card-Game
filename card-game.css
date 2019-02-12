@@ -1,0 +1,86 @@
+body {
+  background: lightblue;
+}
+body header {
+  margin-bottom: 10px;
+}
+body header #title {
+  display: inline-block;
+}
+body header #james-hooper-logo {
+  display: inline-block;
+}
+body #app {
+  display: flex;
+  margin: auto;
+}
+body #app .game-card {
+  background-image: url(https://i.ibb.co/WfPx9nv/playing-card-Custom-dimensions.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 180px;
+  width: 130px;
+  border: 1px solid black;
+  border-radius: 7px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+body #app #right-col {
+  flex: 3;
+}
+body #app #right-col #gameplay-container {
+  background: lightgreen;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 10px;
+  padding: 10px;
+}
+body #app #left-col {
+  background: yellow;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-right: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+body #app #left-col #card-display {
+  display: flex;
+  margin: auto;
+}
+body #app #left-col #card-display #button-container {
+  flex: 1;
+  margin: auto;
+  padding-left: 40px;
+}
+body #app #left-col #card-display #button-container #lower {
+  margin-top: 20px;
+  transform: rotate(180deg);
+}
+body #app #left-col #card-display #button-container .arrow {
+  background: lightgreen;
+  position: relative;
+  height: 30px;
+  width: 50px;
+}
+body #app #left-col #card-display #button-container .arrow::after {
+  content: "";
+  position: absolute;
+  top: -48px;
+  left: -15px;
+  border-bottom: 50px solid lightgreen;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+body #app #left-col #win-loss-display {
+  background: pink;
+  flex: 1;
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center;
+}
